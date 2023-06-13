@@ -7,7 +7,10 @@ import dagger.Provides
 @Component (modules = [AppModule::class])
 interface AppComponent {
     fun computer() : Computer.Computer  //can be as function to provide this dependency
+
     //   val computer : Main.Computer //can be as property
+
+    fun inject(activity: MainActivity)  //can be any name   just need to inject
 }
 
 @Module
